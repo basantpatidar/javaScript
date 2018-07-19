@@ -11,9 +11,9 @@ var age = 26;
 console.log(age);
 
 var fullAge = true;
-console.log(fullAge);   */
+console.log(fullAge);   
 
-/*
+
 //  Variables 2
 var name = 'John';
 var age = 26;
@@ -39,10 +39,10 @@ job = 'driver';
 console.log(lastName);  
 
 alert(name + ' is a ' + age + ' years old ' + job + ' Is he married? ' + isMarried + '.');
-*/
 
 
-/*
+
+
 
 // Lecture :  Operators
 var now = 2018
@@ -69,10 +69,12 @@ ageMark = ageMark *2;
 console.log(ageJohn);
 console.log(ageMark);
 
-*/
+
 
 //If else Statments
 
+
+/*
 var name = 'John';
 var age = 26;
 var isMarried = 'no';
@@ -95,3 +97,38 @@ else{
 if(isMarried){
     console.log('Yes');
 }
+*/
+
+
+//  Boolean Logic
+
+var age = 25;
+
+if (age < 20){
+    console.log(name +' is Teen');
+}else if(age > 20 && age < 30){
+    console.log(name +' is young');
+}else{
+    console.log(name +' is Man');
+}
+
+var job = 'teacher';
+job = prompt('What does john do?');
+switch (job){
+    case 'teacher':
+    console.log("John Teaches kids");
+    break;
+    case 'driver':
+    console.log("He is a driver");
+    break;
+    case 'cop':
+    console.log('He is a cop');
+    break;
+    default:
+    console.log('Something else');
+}
+
+
+
+
+
