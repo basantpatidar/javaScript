@@ -97,7 +97,7 @@ else{
 if(isMarried){
     console.log('Yes');
 }
-*/
+
 
 
 //  Boolean Logic
@@ -127,6 +127,43 @@ switch (job){
     default:
     console.log('Something else');
 }
+*/
+
+// Challenge 1 Q: John and mark invented a game where player with the highest value 
+// of height (in cm) plus five times of his age wins.
+
+
+var johnAge = 20;
+var markAge = 22;
+var player3Age = 20;
+
+var johnHeight = 200;
+var markHeight = 180;
+var player3Height = 200;
+
+var johnPoints = johnAge * 5;
+var markPoints = markAge * 5;
+var player3Points = player3Age * 5;
+
+johnPoints = johnPoints + johnHeight;
+markPoints = markPoints + markHeight;
+player3Points += player3Height; 
+
+//var johnPoints = johnAge * 5 + johnHeight;
+//var markPoints = markAge * 5 + markHeight;
+//var player3Points = player3Age * 5 + player3Height;
+
+if(johnPoints > markPoints && johnPoints > player3Points){
+    console.log("john wins with " + johnPoints);
+}else if (markPoints > johnPoints && markPoints > player3Points){
+    console.log('Mark wins with ' + markPoints);
+} else if(player3Points > johnPoints && player3Points > markPoints){
+    console.log('Player 3 is winner with ' + player3Points);
+} else{
+    console.log('its a tie' + johnPoints + ' ' + markPoints + ' ' + player3Points);
+}
+
+
 
 
 
