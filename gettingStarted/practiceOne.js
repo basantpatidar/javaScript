@@ -38,7 +38,6 @@ function reverseString(givenString){
     return givenString.split("").reverse().join("");
 }
     console.log(reverseString("Basant"));
-    */
 
 // Palindrome Check
 
@@ -53,3 +52,30 @@ function palindromeChecker(abc){
     }
 }
     palindromeChecker("aba");
+
+*/ 
+
+//Arrays
+
+var names = ['Basant','Yash','Akshay'];
+var year = new Array(1992,1996,1993);
+
+console.log(names[2]);
+name[1] = 'Udit';
+
+var yash = ['Yash','Jain','1996','Student',false];
+
+yash.push('blue');
+yash.unshift('Mr.');
+yash.pop();
+yash.shift();
+
+console.log(yash);
+
+if (yash.indexOf('Student') === -1){
+    console.log("No he is not a student.");
+}else{
+    console.log("he is a student.")
+}
+
+
