@@ -127,7 +127,7 @@ switch (job){
     default:
     console.log('Something else');
 }
-*/
+
 
 // Challenge 1 Q: John and mark invented a game where player with the highest value 
 // of height (in cm) plus five times of his age wins.
@@ -162,9 +162,36 @@ if(johnPoints > markPoints && johnPoints > player3Points){
 } else{
     console.log('its a tie' + johnPoints + ' ' + markPoints + ' ' + player3Points);
 }
+*/
 
+//Functions
 
+function calculateAge(yearOfBirth){
+    var age = 2018 - yearOfBirth;
+    return age;
+}
+var ageJohn = calculateAge(1995);
+var ageMike = calculateAge(1997);
+var ageMary = calculateAge(1992);
 
+//console.log(ageJohn);
+//console.log(ageMike);
+//console.log(ageMary);
+
+function yearsUntilRetirement(name, year){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    if(retirement >= 0){
+        console.log(retirement + ' to retirement');
+    }else{
+        console.log('Retired');
+    }
+    
+}
+
+yearsUntilRetirement('John', 1940);
+yearsUntilRetirement('John', 1960);
+yearsUntilRetirement('John', 1980);
 
 
 
