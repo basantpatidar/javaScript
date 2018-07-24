@@ -52,8 +52,7 @@ function palindromeChecker(abc){
     }
 }
     palindromeChecker("aba");
-
-*/ 
+ 
 
 //Arrays
 
@@ -78,4 +77,43 @@ if (yash.indexOf('Student') === -1){
     console.log("he is a student.")
 }
 
+*/
+
+// Objects and Methods
+
+var basant = {
+    name: 'Basant',
+    lastName: 'Patidar',
+    yearOfBirth: 1992,
+    job: 'Student',
+    isMerried: false
+};
+
+console.log(basant.lastName);
+console.log(basant['yearOfBirth']);
+
+var xyz = 'job';
+console.log(basant[xyz]);
+
+basant.lastName = 'Patel';
+basant['job'] = 'Developer';
+
+console.log(basant);
+
+
+var udit = new Object();
+udit.name = 'Udit';
+udit.lastName = 'Gupta';
+udit.yearOfBirth = 1992;
+udit.job = 'DA';
+udit.isMerried = false;
+
+console.log(udit);
+
+udit.lastName = 'Singh';
+console.log(udit.lastName);
+
+var abc = 'name';
+console.log(udit[abc]);
+console.log(abc);
 
