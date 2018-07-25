@@ -155,3 +155,19 @@ john.age = age;
 console.log(akshay);
 
 
+// V 1.20
+var akshay = {
+    name : 'Akshay',
+    lastName : 'Gupta',
+    yearOfBirth : 1993,
+    job : 'GA',
+    isMerried : false,
+    family : ['abcd','edf','hij'],
+    calculateAge : function(yearOfBirth){
+      //  return 2018-yearOfBirth;
+      this.age = 2018 - this.yearOfBirth;
+    }
+};
+
+akshay.calculateAge();
+console.log(akshay);
