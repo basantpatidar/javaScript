@@ -117,3 +117,41 @@ var abc = 'name';
 console.log(udit[abc]);
 console.log(abc);
 
+
+//V 1.00
+
+var akshay = {
+    name : 'Akshay',
+    lastName : 'Gupta',
+    yearOfBirth : 1993,
+    job : 'GA',
+    isMerried : false,
+    family : ['abcd','edf','hij'],
+    calculateAge : function(yearOfBirth){
+        return 2018 - yearOfBirth;
+    }
+};
+
+ console.log(akshay.calculateAge(1993));
+ 
+
+// V 1.01
+ var akshay = {
+    name : 'Akshay',
+    lastName : 'Gupta',
+    yearOfBirth : 1993,
+    job : 'GA',
+    isMerried : false,
+    family : ['abcd','edf','hij'],
+    calculateAge : function() {
+        return 2018 - this.yearOfBirth;
+    }
+};
+console.log(akshay.calculateAge());
+
+var age = john.calculateAge();
+john.age = age;
+
+console.log(akshay);
+
+
