@@ -169,8 +169,7 @@ var akshay = {
 };
 
 akshay.calculateAge();
-console.log(akshay);
-*/
+    console.log(akshay);
 
 
 //Loops
@@ -189,3 +188,86 @@ for(i = names.length - 1; i > -1; i--){
 }
 
 
+// While Loops
+var names = ['Basant', 'Akshay', 'udit','Avtar'];
+var i = 0;
+while(i < names.length){
+    console.log(names[i]);
+    i++;
+}
+
+//Continue and Break Statments
+for (var i = 0; i <= 5; i++){
+    console.log(i);
+    if(i === 3){
+        break;
+    }
+}
+
+for (var i = 0; i <= 5; i++){
+    if(i === 3){
+        continue;
+    }
+    console.log(i);
+    
+}
+
+*/
+
+//Coding Challenge 2
+
+var years = [1990,1992,1994,1996,2008];
+var ages = [];
+for(i = 0; i < years.length; i ++){
+    ages[i] = 2018 - years[i];
+}
+
+for(i = 0; i < ages.length; i ++){
+    if(ages[i] < 18){
+        console.log(ages[i] +' Age is Under 18')
+    }else{
+        console.log(ages[i] +' Age is OK')
+    }
+}
+
+function printFullAge(years){
+    var ages = [];
+    var abc = [];
+    for(i = 0; i < years.length; i ++){
+        ages[i] = 2018 - years[i];
+    }
+    
+    for(i = 0; i < ages.length; i ++){
+        if(ages[i] < 18){
+            abc[i] = false;
+        }else{
+            abc[i] = true;
+        }
+    }
+    return console.log(abc);
+
+}
+var years = [1990,1992,1994,1996,2008];
+var full_1 = printFullAge(years);
+
+//different way using push method
+var years = [1990,1992,1994,1996,2008];
+function printFullAge(years){
+    var ages = [];
+    var fullAges = [];
+    for(i = 0; i < years.length; i ++){
+        ages[i] = 2018 - years[i];
+    }
+    
+    for(i = 0; i < ages.length; i ++){
+        if(ages[i] < 18){
+            console.log(ages[i] +' Age is Under 18');
+            fullAges.push(false);
+        }else{
+            console.log(ages[i] +' Age is OK');
+            fullAges.push(true);
+        }
+    }
+    return fullAges;
+}
+var full_2 = printFullAge(years);
