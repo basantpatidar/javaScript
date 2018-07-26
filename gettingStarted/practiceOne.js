@@ -77,7 +77,6 @@ if (yash.indexOf('Student') === -1){
     console.log("he is a student.")
 }
 
-*/
 
 // Objects and Methods
 
@@ -171,3 +170,22 @@ var akshay = {
 
 akshay.calculateAge();
 console.log(akshay);
+*/
+
+
+//Loops
+//For Loops
+var names = ['Basant', 'Akshay', 'udit','Avtar'];
+for (var i = 0; i < 4; i ++ ){
+    console.log(names[i]);
+}
+
+for(i = 0; i < names.length; i++){
+    console.log(names[i]);
+}
+
+for(i = names.length - 1; i > -1; i--){
+    console.log(names[i]);
+}
+
+
