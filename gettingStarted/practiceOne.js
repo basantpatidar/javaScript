@@ -214,7 +214,7 @@ for (var i = 0; i <= 5; i++){
 
 */
 
-//Coding Challenge 2
+//Coding Challenge 2 
 
 var years = [1990,1992,1994,1996,2008];
 var ages = [];
@@ -255,16 +255,16 @@ var years = [1990,1992,1994,1996,2008];
 function printFullAge(years){
     var ages = [];
     var fullAges = [];
-    for(i = 0; i < years.length; i ++){
-        ages[i] = 2018 - years[i];
+    for(j = 0; j < years.length; j ++){
+        ages[j] = 2018 - years[i];
     }
     
-    for(i = 0; i < ages.length; i ++){
-        if(ages[i] < 18){
-            console.log(ages[i] +' Age is Under 18');
+    for(j = 0; j < ages.length; j ++){
+        if(ages[j] < 18){
+            console.log(ages[j] +' Age is Under 18');
             fullAges.push(false);
         }else{
-            console.log(ages[i] +' Age is OK');
+            console.log(ages[j] +' Age is OK');
             fullAges.push(true);
         }
     }
