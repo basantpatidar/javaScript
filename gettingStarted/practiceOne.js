@@ -8,7 +8,7 @@ function reverse_number(number){
 console.log(reverse_number(123456));   
 
 
-//Spliting String in Array
+//Splitting String in Array
 
 function splitString(name){
     return name.split("");
@@ -16,12 +16,12 @@ function splitString(name){
     console.log(splitString("Basant"));
 
 
-//Reversing Array
+//Reversing Array uding reverse method
 
 function reverseArray(nameArray){
     return nameArray.split("").reverse();
 }
-    console.log(reverseArray("Basant"));
+    console.log(reverseArray("basant"));
 
 
 //Joining Array Characters
@@ -54,7 +54,7 @@ function palindromeChecker(abc){
     palindromeChecker("aba");
  
 
-//Arrays
+//Arrays examples
 
 var names = ['Basant','Yash','Akshay'];
 var year = new Array(1992,1996,1993);
