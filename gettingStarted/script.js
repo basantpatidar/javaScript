@@ -1,5 +1,5 @@
 /*
-//Variables
+// 1. Variables
 
 var name = 'John';
 console.log(name);
@@ -14,7 +14,7 @@ var fullAge = true;
 console.log(fullAge);   
 
 
-//  Variables 2
+// 1.1 Variables Example 
 var name = 'John';
 var age = 26;
 
@@ -44,7 +44,7 @@ alert(name + ' is a ' + age + ' years old ' + job + ' Is he married? ' + isMarri
 
 
 
-// Lecture :  Operators
+//2. Lecture :  Operators
 var now = 2018
 
 var birthYear = now - 26;
@@ -71,7 +71,7 @@ console.log(ageMark);
 
 
 
-//If else Statments
+//3. If else Statments
 
 
 /*
@@ -100,7 +100,7 @@ if(isMarried){
 
 
 
-//  Boolean Logic
+// 4. Boolean Logic
 
 var age = 25;
 
@@ -129,7 +129,7 @@ switch (job){
 }
 
 
-// Challenge 1 Q: John and mark invented a game where player with the highest value 
+// 5. Challenge 1 Q: John and mark invented a game where player with the highest value 
 // of height (in cm) plus five times of his age wins.
 
 
@@ -164,7 +164,7 @@ if(johnPoints > markPoints && johnPoints > player3Points){
 }
 */
 
-//Functions
+//  6. Functions
 
 function calculateAge(yearOfBirth){
     var age = 2018 - yearOfBirth;
