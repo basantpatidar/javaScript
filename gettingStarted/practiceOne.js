@@ -8,7 +8,7 @@ function reverse_number(number){
 console.log(reverse_number(123456));   
 
 
-//Splitting String in Array
+//Splitting Strings into Array
 
 function splitString(name){
     return name.split("");
