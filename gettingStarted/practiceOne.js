@@ -24,7 +24,7 @@ function reverseArray(nameArray){
     console.log(reverseArray("basant"));
 
 
-//Joining Array Characters
+//Joining Array Characters B, a, s, a, n, t
 
 function joinArray(givenArray){
     return givenArray.join("");
