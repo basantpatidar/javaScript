@@ -1,5 +1,5 @@
 /*
-// Reversing a number
+// Reversing a number from digit 
     
 function reverse_number(number){
     number = number + "";
