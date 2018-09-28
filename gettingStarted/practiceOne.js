@@ -16,7 +16,7 @@ function splitString(name){
     console.log(splitString("Basant"));
 
 
-//Reversing Array uding reverse method
+//Reversing Array using reverse method
 
 function reverseArray(nameArray){
     return nameArray.split("").reverse();
