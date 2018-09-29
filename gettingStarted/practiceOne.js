@@ -39,7 +39,7 @@ function reverseString(givenString){
 }
     console.log(reverseString("Basant"));
 
-// Palindrome Check
+// Checking Palindrome 
 
 function palindromeChecker(abc){
   //  var original = abc;
