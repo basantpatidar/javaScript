@@ -188,7 +188,7 @@ for(i = names.length - 1; i > -1; i--){
 }
 
 
-// While Loops
+// While Loops with Arrey
 var names = ['Basant', 'Akshay', 'udit','Avtar'];
 var i = 0;
 while(i < names.length){
@@ -196,7 +196,7 @@ while(i < names.length){
     i++;
 }
 
-//Continue and Break Statments
+//Continue and Break Statments in for loop
 for (var i = 0; i <= 5; i++){
     console.log(i);
     if(i === 3){
@@ -214,7 +214,7 @@ for (var i = 0; i <= 5; i++){
 
 */
 
-//Coding Challenge 2 
+//Coding Challenge 2, Question is not here.
 
 var years = [1990,1992,1994,1996,2008];
 var ages = [];
