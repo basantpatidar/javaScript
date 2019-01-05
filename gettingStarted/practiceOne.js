@@ -16,7 +16,7 @@ function splitString(name){
     console.log(splitString("Basant"));
 
 
-//Reversing Array using reverse method
+//Reversing Array using split and reverse method
 
 function reverseArray(nameArray){
     return nameArray.split("").reverse();
@@ -32,7 +32,7 @@ function joinArray(givenArray){
     console.log(joinArray(["B", "a", "s", "a", "n", "t"]))
 
 
-// Reverse String
+// Reverse String ",splite,reverse,join
 
 function reverseString(givenString){
     return givenString.split("").reverse().join("");
@@ -54,7 +54,7 @@ function palindromeChecker(abc){
     palindromeChecker("aba");
  
 
-//Arrays examples
+//Arrays examples, push, pop, shift
 
 var names = ['Basant','Yash','Akshay'];
 var year = new Array(1992,1996,1993);
