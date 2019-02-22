@@ -1,5 +1,5 @@
 /*
-// Reversing a number
+// Reversing a number from digit 
     
 function reverse_number(number){
     number = number + "";
@@ -8,7 +8,7 @@ function reverse_number(number){
 console.log(reverse_number(123456));   
 
 
-//Splitting String in Array
+//Splitting Strings into Array
 
 function splitString(name){
     return name.split("");
@@ -16,7 +16,7 @@ function splitString(name){
     console.log(splitString("Basant"));
 
 
-//Reversing Array uding reverse method
+//Reversing Array using split and reverse method
 
 function reverseArray(nameArray){
     return nameArray.split("").reverse();
@@ -24,7 +24,7 @@ function reverseArray(nameArray){
     console.log(reverseArray("basant"));
 
 
-//Joining Array Characters
+//Joining Array Characters B, a, s, a, n, t
 
 function joinArray(givenArray){
     return givenArray.join("");
@@ -32,14 +32,14 @@ function joinArray(givenArray){
     console.log(joinArray(["B", "a", "s", "a", "n", "t"]))
 
 
-// Reverse String
+// Reverse String ",splite,reverse,join
 
 function reverseString(givenString){
     return givenString.split("").reverse().join("");
 }
     console.log(reverseString("Basant"));
 
-// Palindrome Check
+// Checking Palindrome 
 
 function palindromeChecker(abc){
   //  var original = abc;
@@ -54,7 +54,7 @@ function palindromeChecker(abc){
     palindromeChecker("aba");
  
 
-//Arrays examples
+//Arrays examples, push, pop, shift
 
 var names = ['Basant','Yash','Akshay'];
 var year = new Array(1992,1996,1993);
@@ -188,7 +188,7 @@ for(i = names.length - 1; i > -1; i--){
 }
 
 
-// While Loops
+// While Loops with Arrey
 var names = ['Basant', 'Akshay', 'udit','Avtar'];
 var i = 0;
 while(i < names.length){
@@ -196,7 +196,7 @@ while(i < names.length){
     i++;
 }
 
-//Continue and Break Statments
+//Continue and Break Statments in for loop
 for (var i = 0; i <= 5; i++){
     console.log(i);
     if(i === 3){
@@ -214,7 +214,7 @@ for (var i = 0; i <= 5; i++){
 
 */
 
-//Coding Challenge 2 
+//Coding Challenge 2, Question is not here.
 
 var years = [1990,1992,1994,1996,2008];
 var ages = [];
