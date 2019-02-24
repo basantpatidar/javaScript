@@ -28,6 +28,25 @@ jane.calculateAge();
 mark.calculateAge();
 
 
-
+function Bird(name) {
+    this.name = name;
+    this.numLegs = 2;
+  }
   
+  //Own Property
+  let canary = new Bird("Tweety");
+  let ownProps = [];
+  for(let property in canary){
+    if(canary.hasOwnProperty(property)){
+      ownProps.push(property);
+    }
+  }
+  console.log(ownProps);
   
+  //Use of Prototype
+  function Dog(name) {
+    this.name = name;
+  }
+  Dog.prototype.numLegs = 4;
+  
+  let beagle = new Dog("Snoopy");
