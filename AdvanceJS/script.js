@@ -50,3 +50,12 @@ function Bird(name) {
   Dog.prototype.numLegs = 4;
   
   let beagle = new Dog("Snoopy");
+
+  //verify object
+  function House(numBedrooms) {
+    this.numBedrooms = numBedrooms;
+  }
+  
+  let myHouse = new House(1);
+  myHouse instanceof House;
+  
