@@ -100,6 +100,7 @@ function Bird(name) {
   }
   
   Dog.prototype = {
+    constructor: Dog,
     numLegs: 4,
     eat: function(){
       console.log("padigree");
@@ -108,3 +109,11 @@ function Bird(name) {
       console.log("white color");
     }
   };
+
+  
+  //check prototype
+  function Dog(name) {
+    this.name = name;
+  }
+  let beagle = new Dog("Snoopy");
+  Dog.prototype.isPrototypeOf(beagle);
