@@ -80,3 +80,16 @@ function Bird(name) {
   }
   console.log(ownProps);
   console.log(prototypeProps);
+
+  //check property using constructor
+  function Dog(name) {
+    this.name = name;
+  }
+  
+  function joinDogFraternity(candidate) {
+  if(candidate.constructor === Dog){
+    return true;
+  }  else{
+    return false;
+  }
+  }
