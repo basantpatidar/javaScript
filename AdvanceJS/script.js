@@ -110,10 +110,53 @@ function Bird(name) {
     }
   };
 
-  
+
   //check prototype
   function Dog(name) {
     this.name = name;
   }
   let beagle = new Dog("Snoopy");
   Dog.prototype.isPrototypeOf(beagle);
+
+  //Use of DRY "Do not repeat yourself"
+  function Cat(name) {
+    this.name = name; 
+  }
+  
+  Cat.prototype = {
+    constructor: Cat
+  };
+  
+  function Bear(name) {
+    this.name = name; 
+  }
+  
+  Bear.prototype = {
+    constructor: Bear
+  };
+  
+  function Animal() { }
+  
+  Animal.prototype = {
+    constructor: Animal,
+    eat: function(){}
+    
+  };
+
+  //Inheritance
+  function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal, 
+  eat: function() {
+    console.log("Hmmm");
+  }
+};
+
+let duck = Object.create(Animal.prototype); 
+let beagle = Object.create(Animal.prototype);
+
+duck.eat(); 
+beagle.eat(); 
+
+//
