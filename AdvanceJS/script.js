@@ -93,3 +93,18 @@ function Bird(name) {
     return false;
   }
   }
+
+  //multiple prototype using object
+  function Dog(name) {
+    this.name = name; 
+  }
+  
+  Dog.prototype = {
+    numLegs: 4,
+    eat: function(){
+      console.log("padigree");
+    },
+    describe: function(){
+      console.log("white color");
+    }
+  };
