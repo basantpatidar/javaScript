@@ -31,3 +31,28 @@ function DateAndTime(){
 
 }
 DateAndTime();
+
+//Getting date in specific format
+function dateNow(){
+    var now = new Date();
+    var day = now.getDate();
+    let month = now.getMonth()+1;
+    let year = now.getFullYear();
+    return console.log(month+"/"+day+"/"+year);
+}
+dateNow();
+
+
+//printing page using windows.print method
+function printScreen(){
+    window.print();
+}
+function animation (id){
+    const element = Document.getElementById(id);
+    const textNode = element.childNodes[0];
+    let text = textNode.data;
+setInterval(function(){
+    text = text[text.length-1]+ text.substring(0,text.length - 1);
+    textNode.data = text;
+}, 100);
+}
