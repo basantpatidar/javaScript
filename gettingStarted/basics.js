@@ -42,7 +42,6 @@ function dateNow(){
 }
 dateNow();
 
-
 //printing page using windows.print method
 function printScreen(){
     window.print();
@@ -56,3 +55,11 @@ setInterval(function(){
     textNode.data = text;
 }, 100);
 }
+
+// Reversing a number from digit 
+    
+function reverse_number(number){
+    number = number + "";
+    return number.split("").reverse().join("");
+}
+console.log(reverse_number(123456));  
