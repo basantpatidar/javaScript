@@ -55,3 +55,53 @@ function rString(h1){
     }, 250);
 }
 
+// find the leap year
+function leapYear(){
+    a = new Date();
+    y = a.getFullYear();
+    if (y % 4 == 0){
+        let result = "Its a leap year"
+        document.getElementById("ly").innerHTML = result;
+        console.log(result);
+    }else{
+        let result = "No its not a leap year";
+        document.getElementById("ly").innerHTML = result;
+        console.log(result)
+    }
+    
+}
+
+
+// finding 1st january on Sundays between 2014 and 2050
+
+function sundays(){
+    let j = 1;
+    for (i = 2014; i < 2051; i ++){
+        var d = new Date(i, 0, 1);
+        if(d.getDay() === 0){
+            console.log("Year "+i+" has sunday on 1 Jan");
+            j += 1
+        }
+        
+}
+console.log("There are "+j+" Number of sundays on Jan 1");
+}
+sundays();
+
+function numGuess(){
+    let ran = Math.floor(Math.random()*3);
+    let guess = prompt(" Please enter your guessed number");
+    
+    function again(){
+        if(guess == ran){
+            console.log(guess+" is correct guess");
+        } 
+        else{
+          guess = prompt("Please enter the Number again");
+          again();
+        }
+    }
+    again();
+}
+numGuess();
+
