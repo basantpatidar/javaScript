@@ -1,4 +1,4 @@
-// print Date and time
+// Q1 print Date and time
 function DateAndTime(){
 let today = new Date();
 let a = today.getDay();
@@ -19,7 +19,7 @@ console.log(hr+" "+m+" "+min+" "+sec);
 DateAndTime();
 
 
-// print current page
+// Q2 print current page
 function printThis(){
     window.print();
 }
@@ -34,7 +34,7 @@ function dateNow(){
 }
 dateNow();
 
-// Area of Triangle
+// Q3 Area of Triangle
 function aot(l,b,h){
    let s = (l+b+h)/2;
    let a = Math.round(Math.sqrt(s*((s-l)*(s-b)*(s-h))));
@@ -55,7 +55,7 @@ function rString(h1){
     }, 250);
 }
 
-// find the leap year
+// Q4 find the leap year
 function leapYear(){
     a = new Date();
     y = a.getFullYear();
@@ -72,7 +72,7 @@ function leapYear(){
 }
 
 
-// finding 1st january on Sundays between 2014 and 2050
+// Q5 finding 1st january on Sundays between 2014 and 2050
 
 function sundays(){
     let j = 1;
@@ -88,6 +88,7 @@ console.log("There are "+j+" Number of sundays on Jan 1");
 }
 sundays();
 
+// Q6 Guess the number
 function numGuess(){
     let ran = Math.floor(Math.random()*3);
     let guess = prompt(" Please enter your guessed number");
@@ -103,5 +104,19 @@ function numGuess(){
     }
     again();
 }
-numGuess();
+// numGuess();
 
+// Q7 Days to Christmas
+function findDate(){
+    var today = new Date();
+    var thenDate = new Date(today.getFullYear(),11,25);
+    if(today.getDate > 25 && today.getMonth == 11){
+        thenDate.setFullYear(today.getFullYear()+1);
+    }
+    thenDate.setFullYear(today.getFullYear()+1);
+    
+    let one_day = 1000*60*60*24;
+    let diff = Math.ceil((thenDate.getTime()-today.getTime())/one_day);
+    console.log(diff+" days are left for the next chritmas");
+}
+findDate();
