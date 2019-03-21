@@ -120,3 +120,67 @@ function findDate(){
     console.log(diff+" days are left for the next chritmas");
 }
 findDate();
+
+//Q8 understanding object with different ways
+ function understandingObject(){
+     
+    console.log(Date.prototype);
+
+    const basant = new Object();
+    basant.height = 160;
+    basant.weight = 250;
+    basant['city'] = 'indore';
+    console.log(basant);
+    console.log(Object.prototype);
+
+    const avtar = {
+        height: 120,
+        weight: 650,
+        city: 'patna'
+    }
+
+
+    console.log(avtar);
+
+    console.log(avtar.city);
+    console.log(basant['city']);
+
+    function Person(height, weight, city ){
+        this.height = height;
+        this.weight = weight;
+        this.city = city;
+    }
+
+    const udit = new Person(120,52,'ghaziabad');
+    Person.prototype.changeHeight = function(newHeight) {
+        return this.height = newHeight;
+    }
+
+    console.log(udit);
+    console.log(Person.prototype)
+
+    udit.changeHeight(900);
+    udit.height = 200;5
+
+    console.log(udit.height);
+}
+// understandingObject();
+
+//Q9 Multiplication and divide  ..way 1.. 
+function calcMultipy(){
+    var text1 = document.getElementById("value1").value;
+    var text2 = document.getElementById("value2").value;
+    var result = text1 * text2;
+    document.getElementById("result").innerHTML = result;
+}
+function calcdivide(){
+var text1 = document.getElementById("value1").value;
+var text2 = document.getElementById("value2").value;
+var result = text1 / text2;
+document.getElementById("result").innerHTML = result;
+}
+
+
+// var element = document.getElementById(h1);
+//     var textNode = element.childNodes[0];
+//     var str = textNode.data;
