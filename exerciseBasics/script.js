@@ -164,7 +164,7 @@ findDate();
 
     console.log(udit.height);
 }
-// understandingObject();
+understandingObject();
 
 //Q9 Multiplication and divide  ..way 1.. 
 function calcMultipy(){
