@@ -180,7 +180,37 @@ var result = text1 / text2;
 document.getElementById("result").innerHTML = result;
 }
 
+//Celcius to Fahranheit
+function tempConverter(d){
+ console.log("\xB0C to \xB0F. is : "+((d*9/5)+32));
+ console.log("\xB0F to \xB0C. is : "+(d - 32)*(5/9));
+}
+tempConverter(20);
 
-// var element = document.getElementById(h1);
-//     var textNode = element.childNodes[0];
-//     var str = textNode.data;
+//get website URL
+function getURL(){
+    // This are the two ways to find website URL
+    console.log(document.URL);
+    return window.location.href;
+}
+console.log(getURL());
+
+// creaating a variable using user defined name
+function userDefineVar(){
+    var var_name = 'abcd';
+    var v = 100;
+    this[var_name] = v;
+    console.log(this[var_name]);
+    console.log(var_name);
+    this.var_name = v;
+    console.log(var_name);
+}
+userDefineVar();
+
+
+// Getting file extension using split and pop
+function getFileExtension(){
+    let fileName = "windows.exe";
+    console.log(fileName.split('.').pop());
+}
+getFileExtension();
