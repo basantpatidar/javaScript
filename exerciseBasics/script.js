@@ -208,3 +208,40 @@ function userDefineVar(){
 userDefineVar();
 
 
+// Getting file extension using split and pop
+function getFileExtension(){
+    let fileName = "windows.exe";
+    console.log(fileName.split('.').pop());
+}
+getFileExtension();
+
+function diffInNum(){
+    // var num = prompt("Please enter number");
+    var num = 10;
+    if (num < 13){
+        let diff = 13 - num;
+        console.log(diff);
+    }
+    else if(num > 13){
+        let diff = (num-13)*2;
+        console.log(diff);
+    } else {
+        console.log("Both are equal")
+    }
+}
+diffInNum();
+
+//add to integres and if both are same then return triple of there sum
+function addTwoNum(){
+    let a = 10;
+    let b = 10;
+    if(a == b){
+        let c = (a+b)*3;
+        console.log(c);
+        }else{
+            let c = a+b;
+            console.log(c);
+        }
+}
+addTwoNum();
+
