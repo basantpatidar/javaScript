@@ -208,9 +208,3 @@ function userDefineVar(){
 userDefineVar();
 
 
-// Getting file extension using split and pop
-function getFileExtension(){
-    let fileName = "windows.exe";
-    console.log(fileName.split('.').pop());
-}
-getFileExtension();
