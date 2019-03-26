@@ -231,7 +231,7 @@ function diffInNum(){
 }
 diffInNum();
 
-//add to integres and if both are same then return triple of there sum
+//add to integers and if both are same then return triple of there sum
 function addTwoNum(){
     let a = 10;
     let b = 10;
@@ -244,4 +244,41 @@ function addTwoNum(){
         }
 }
 addTwoNum();
+
+// Triple the diff if number is greater then 19
+function addTwoAndTripleDiff(){
+    let a = 12;
+        if(a <= 19){
+            c = 19 - a;
+            console.log(c);
+             
+        }else{
+            c = (a - 19) * 3;
+            console.log(c);
+                    }
+}
+addTwoAndTripleDiff();
+
+// Check numbers equal
+function checkNum(){
+    let numOne = 50;
+    let numTwo = 45;
+    let total = numOne + numTwo;
+    if(numOne == 50 || total == 50 || numTwo == 50){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(checkNum());
+
+// Q 19 if number is within 20 of 100 and 400
+function numRange(x){
+    return (x >= 80 && x <= 120 || x >= 380 && x <= 420)
+}
+console.log(numRange(80));
+console.log(numRange(90));
+console.log(numRange(99));
+console.log(numRange(199));
+console.log(numRange(200));
 
