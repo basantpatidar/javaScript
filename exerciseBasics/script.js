@@ -282,3 +282,41 @@ console.log(numRange(99));
 console.log(numRange(199));
 console.log(numRange(200));
 
+// finding largest out of three intigers
+function findLarge(x,y,z){
+    if(x > y && x > z){
+        console.log("x is greater");
+    }else if(y > x && y > z){
+        console.log("y is greater");
+    }else if(z > x && z > y){
+        console.log("z is greater");
+    }else{
+        console.log("All are same");
+    }
+}
+findLarge(4,3,2);
+
+// Q 20 find if one interger is positive and other is negative
+function positiveNegative(x,y){
+    if (x < 0 && y >= 0){
+        console.log("x is negative");
+    }else if(y < 0 && x >= 0){
+        console.log("y is negative");
+    } else if (y >= 0 && x >= 0){
+        console.log("both are positive");
+    }else{
+        console.log("Both are negative");
+    }
+}
+positiveNegative(2,2);
+
+// other way to simply find negative or positive
+function posNeg(x,y){
+    if (x < 0 && y > 0 || y < 0 && x > 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(posNeg(2,-2));
+
