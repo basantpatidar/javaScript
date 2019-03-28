@@ -320,3 +320,25 @@ function posNeg(x,y){
 }
 console.log(posNeg(2,-2));
 
+// Q 21 add Py to the starting of a string if not present 
+function stringAdd(){
+    let word = "pi";
+    if(word[0] != 'P' && word[1] != 'y'){
+        word = "Py"+word;
+        console.log(word);
+    }else{
+        console.log(word);
+    }
+}
+stringAdd();
+
+//Other way
+function stringCheck(){
+    let word = "thon11";
+    if (word === null || word === undefined || word.substring(0,2) === 'Py'){
+        return word;
+    }
+    return "Py"+word;
+}
+
+console.log(stringCheck());
