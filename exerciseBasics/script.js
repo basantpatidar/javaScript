@@ -342,3 +342,28 @@ function stringCheck(){
 }
 
 console.log(stringCheck());
+
+//Q 22 remove letter from any string
+function removeLetter(word){
+    var wordLength = word.length;
+    var newString ;
+    for(var i=0;i<wordLength;i++){
+        if(word.charAt(i)=='c'){
+            newString = word.substring(0, i) + word.substring(i+1, wordLength);
+        }
+    }
+    return newString;
+}
+console.log(removeLetter("javac"));
+
+// other way
+function removelet(work,x){
+    // let work = "javac";
+    partOne = work.substring(0,x);
+    partTwo = work.substring(x+1,work.length);
+    return partOne + partTwo;
+
+}
+console.log(removelet("javac",4));
+ 
+
