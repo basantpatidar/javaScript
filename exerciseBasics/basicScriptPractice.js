@@ -65,6 +65,7 @@ function showNumbers(input){
 }
 showNumbers(5);
 
+// One of the true value make all the values true 
 function countTruthy(array){
   let truthyCounter = 0;
   let falsyCounter = 0;
@@ -79,6 +80,7 @@ function countTruthy(array){
 array = [0, 1,2,3, NaN, undefined, 0, ''];
 countTruthy(array);
 
+// accessing  object
 function showProperties(movie){
   for (let key in movie){
     // console.log(movie[key]);
