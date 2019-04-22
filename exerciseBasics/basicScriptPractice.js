@@ -65,7 +65,6 @@ function showNumbers(input){
 }
 showNumbers(5);
 
-// One of the true value make all the values true 
 function countTruthy(array){
   let truthyCounter = 0;
   let falsyCounter = 0;
@@ -80,7 +79,6 @@ function countTruthy(array){
 array = [0, 1,2,3, NaN, undefined, 0, ''];
 countTruthy(array);
 
-// accessing  object
 function showProperties(movie){
   for (let key in movie){
     // console.log(movie[key]);
@@ -141,3 +139,30 @@ function forwordStars(count){
 }
 forwordStars(5);
 
+// brute force way
+function primeNumbers(limit){
+  console.log(2);
+  console.log(3);
+  console.log(5);
+  console.log(7);
+  for (let i = 2; i <= limit; i ++){
+    if(i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 7 !== 0){  
+    console.log(i);
+    }
+  }
+}
+primeNumbers(30);
+
+//Finding prime optimized
+function findPrime(limit){
+  for (let number = 2; number <= limit; number ++){
+    let isPrime = true;
+    for (let factor = 2; factor < number; factor++){
+      if(number%factor == 0)
+      isPrime = false
+      break;
+    }
+    if(isPrime) console.log(number);
+  }
+}
+findPrime(30);
