@@ -95,3 +95,47 @@ const movie = {
   director: 'b'
 };
 showProperties(movie);
+
+function sum(limit){
+  const first = 3;
+  const second = 5;
+  let add = 0;
+  
+  for (let i = 0; i <= limit; i++)
+    if (i % 3 == 0 || i % 5 == 0)
+      add += i;
+       
+  console.log(add);
+}
+sum(10);
+
+function gradeCalculator(marks){
+  let sum = 0;
+  for (let value of marks){
+    sum += value;
+  }
+  let average = sum/marks.length;
+  if(average > 89) console.log("A");
+  else if (average > 79) console.log("B");
+  else if (average > 69) console.log("C");
+  else if (average > 59) console.log("D");
+  else if (average < 60) console.log("F");
+  
+
+}
+const marks = [80, 99, 95];
+gradeCalculator(marks);
+
+function forwordStars(count){
+    for (let i = 1; i <= count; i++){
+      let stars = '';
+      for(let j = 0; j < i; j++){
+          stars = stars+"*";
+      }
+      console.log(stars);
+      
+      
+    }
+}
+forwordStars(5);
+
