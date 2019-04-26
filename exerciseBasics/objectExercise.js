@@ -52,3 +52,20 @@ function objectChecker(myNewAddress1, myNewAddress2){
 
 objectChecker(myNewAddress1,myNewAddress2);
 
+function blogPost(blogTitle,body,author,views, commentAuthor, commentBlog,isLive){
+    const blog = {
+        title : blogTitle,
+        body: body,
+        author: author,
+        views: views,
+        comments: {
+            commentAuthor: commentAuthor,
+            commentBlog: commentBlog
+        },
+        isLive: isLive
+    };
+    return blog;
+
+}
+
+console.log(blogPost("myBlog", "This is body", "Jone", "15", "Comment author name", "This is comment blog",true));
