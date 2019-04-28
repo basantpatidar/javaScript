@@ -69,3 +69,26 @@ function blogPost(blogTitle,body,author,views, commentAuthor, commentBlog,isLive
 }
 
 console.log(blogPost("myBlog", "This is body", "Jone", "15", "Comment author name", "This is comment blog",true));
+
+
+function blogPostArray(blogTitle,body,author,views, commentAuthor, commentBody,isLive){
+    const blog = {
+        title : blogTitle,
+        body: body,
+        author: author,
+        views: views,
+        comments: [
+            {commentAuthor: commentAuthor,
+            commentBody: commentBody},
+            {
+                commentAuthor: 'b',
+                commentBody: 'c'
+            }
+        ],
+        isLive: isLive
+    };
+    return blog;
+
+}
+
+console.log(blogPostArray("myBlog", "This is body", "Jone", "15", "Comment author name", "This is comment blog",true));
