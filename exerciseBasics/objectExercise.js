@@ -107,3 +107,29 @@ function Post (title, body,author ) {
 
 let post1 = new Post("a","b","c");
 console.log(post1);
+
+//use of delete
+function useOfDelete(){
+    let student = {
+        name: "John",
+        sclass: "x",
+        rollno: "v"
+    }
+    delete student.rollno;
+    return student;
+}
+
+let result = useOfDelete();
+console.log(result);
+
+// Length of object
+ function findLength(){
+    let student = {
+        name: "John",
+        sclass: "x",
+        rollno: "v"
+    }
+    lengthOfStudent = Object.keys(student).length;
+    console.log(lengthOfStudent);
+ }
+findLength();
