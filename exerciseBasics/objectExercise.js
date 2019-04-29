@@ -92,3 +92,18 @@ function blogPostArray(blogTitle,body,author,views, commentAuthor, commentBody,i
 }
 
 console.log(blogPostArray("myBlog", "This is body", "Jone", "15", "Comment author name", "This is comment blog",true));
+
+// creating a blog post fucntion
+function Post (title, body,author ) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    views = 0;
+    this.comments = [];
+    this.isLive = false;
+    // let today = new Date();
+    this.day = new Date().getDay();
+}
+
+let post1 = new Post("a","b","c");
+console.log(post1);
