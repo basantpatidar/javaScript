@@ -133,3 +133,34 @@ console.log(result);
     console.log(lengthOfStudent);
  }
 findLength();
+
+//Array
+
+function arrayMethods(){
+
+//use of arrow function
+const numbers = [1,2,3];
+numbers.forEach(number => console.log(number));
+
+//same code without arrow function
+numbers.forEach(function (number) {
+    console.log(number);
+    });
+
+// for each method of array with 2 parameteres
+numbers.forEach((number, index) => console.log(index+" <= Index || Element => "+number));
+
+// use of Joined method
+const joined = numbers.join('A');  //1A2A3  // returns a string with all the elements of array joined
+console.log(joined);
+
+const message = 'This is John';
+const parts = message.split(" "); // returns a array with all the letters in a string splited in array
+console.log(parts);
+
+const combined = parts.join("-");
+console.log(combined);  //return a string will all the elements in array combined
+
+}
+arrayMethods();
+
