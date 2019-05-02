@@ -164,3 +164,34 @@ console.log(combined);  //return a string will all the elements in array combine
 }
 arrayMethods();
 
+function arraySorting(){
+    console.log("-----------------Array sorting----------------")
+    const numbers = [2,3,1];
+    // Use of sort method
+    numbers.sort();
+    console.log(numbers);
+    
+    //use of reverse sorting
+    numbers.reverse();
+    console.log(numbers);
+
+    //Sorting on object 
+    const courses = [{id:1, name:'Node.js'},
+    {id:2, name: 'javascript'},
+    {id:3, name:'Python'},
+    {id:4, name: 'zavascript'},
+    {id:5, name: 'Aython'}]; // sorting works with any number of keys in an object
+
+    courses.sort(function(a,b){
+        const nameA = a.name.toLowerCase(); // removing case sensitivity.
+        const nameB = b.name.toLowerCase();
+
+        if( nameA < nameB) return -1;
+        if( nameA < nameB) return 1;
+        return 0;
+    });
+    console.log(courses);
+    
+}
+arraySorting();
+
