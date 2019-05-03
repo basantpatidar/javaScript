@@ -187,7 +187,7 @@ function arraySorting(){
         const nameB = b.name.toLowerCase();
 
         if( nameA < nameB) return -1;
-        if( nameA < nameB) return 1;
+        if( nameA > nameB) return 1;
         return 0;
     });
     console.log(courses);
@@ -195,3 +195,70 @@ function arraySorting(){
 }
 arraySorting();
 
+// every() and some() are the methods used for serching in Js
+// where every() needs evert index to be true while in 
+//some() even if single index is true it returns true
+
+//
+
+function arrayExercise(){
+
+let numbers = arrayFromRange(1,5);
+console.log(numbers);
+
+
+function arrayFromRange(min,max){
+    let num = [];
+    for (let i = min; i<= max; i++)
+        num.push(i);   
+    return num;
+}
+
+const find = includes(numbers,6);
+console.log(find);
+
+
+function includes(inputArray, searchElement){
+    for (let value of inputArray)
+        if (value === searchElement)
+            return true;
+        return false;
+
+    }
+
+
+const newArray = except(numbers,[1,2]);
+console.log(newArray);
+ 
+function except(array, excluded){
+    for(let i = 0; i < array.length; i++)
+        for(let values of excluded)
+            if (array[i] == values)
+                array.splice(i,1);
+    return array;
+}
+
+const newOutput = exceptIncludes(numbers,[1,2]);
+console.log(newOutput);
+
+function exceptIncludes(array, excluded){
+    const output = [];
+    for (let element of array)
+        if(!excluded.includes(element))
+            output.push(element);
+    return output;
+    }
+
+numbers = [1, 2, 3, 4, 5];
+let output = move(numbers,1,3);
+console.log(output);
+
+function move(array, number, offset){
+    let index = array.indexOf(number);
+    array.splice(index,1);
+    array.splice(index + offset,0,number);
+    return array;
+    }
+
+}
+arrayExercise();
