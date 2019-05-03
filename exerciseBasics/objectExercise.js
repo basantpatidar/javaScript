@@ -260,5 +260,58 @@ function move(array, number, offset){
     return array;
     }
 
+
+numbers.push(5);
+output = countOccurrences(numbers,5);
+console.log(output);
+
+
+function countOccurrences(array,searchElement){
+    let output = 0;
+    for (let value of array)
+        if(value == searchElement)
+            output += 1;
+    return output;
+}
+
+// counting the number of occurence using reduce
+
+output = countUsingReduce(numbers,5);
+console.log(output);
+
+
+function countUsingReduce(array,searchElement){
+    return array.reduce((accomulator, current) => {
+        const occurence = (current === searchElement) ? 1 : 0;
+        return accomulator + occurence;
+        }, 0);
+    }
+
+let max = getMax(numbers);
+console.log(max);
+
+function getMax(array){
+    if (array.length === 0) return undefined;
+    return array.reduce((a,b) => (a > b) ? a : b);
+}
+
+const movies = [
+    {title: 'a', year: 2018, rating: 4.5},
+    {title: 'b', year: 2018, rating: 4.7},
+    {title: 'c', year: 2018, rating: 3},
+    {title: 'd', year: 2017, rating: 4.5}
+];
+
+console.log(showMovieRating(movies));
+
+function showMovieRating(movie){
+   const title =  movie.filter(m => m.year === 2018 && m.rating >= 4)
+    .sort((a,b) => a.rating - b.rating)
+    .reverse()
+    .map(m => m.title)
+    return title;
+    }
+
 }
 arrayExercise();
+
