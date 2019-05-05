@@ -315,3 +315,54 @@ function showMovieRating(movie){
 }
 arrayExercise();
 
+function functionExercise(){
+    console.log("----------------Functions-------------------");
+    
+
+function sum(...args){
+    let total = 0;
+    console.log(args)
+    if(Array.isArray(args[0])){
+        for(let values of args[0]){
+            total += values;     
+        }
+        return total;
+    }
+        for(let values of args){
+            total += values;
+        }
+        return total;
+}
+const getSum = sum([1,2,3]);
+console.log(getSum);
+    
+    let areaOfCircle = {
+        radius: 2,
+        get area() {
+            return Math.PI*this.radius*this.radius;
+        }
+    };
+    console.log(areaOfCircle.area);
+    
+    const numbers = [1,2,3,4];
+    try{
+        const count = countOccurrences(true,1);
+        console.log(count);
+    }catch(e){
+        console.log(e.message);
+        
+    }
+
+function countOccurrences(array, searchElement){
+    if(!Array.isArray(array))
+        throw new Error("Not a array type");
+    return array.reduce((accomulator,current)=> {
+        const occurence = (current === searchElement)? 1 : 0;
+        return accomulator+ occurence;
+    }, 0);
+}
+
+}
+functionExercise();
+
+
