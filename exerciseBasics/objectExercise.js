@@ -366,3 +366,37 @@ function countOccurrences(array, searchElement){
 functionExercise();
 
 
+function Circle(radius){
+    console.log("--------------Circle Function-------------");
+    
+    this.radius = radius;
+
+    let defaultLocation = {x:0, y:1};
+
+    this.getDefaultLocation = function(){
+        return defaultLocation;
+    };
+
+    this.draw = function(){
+        console.log('draw');
+    };
+
+    Object.defineProperty(this, 'defaultLocation',{
+        get: function(){
+            return defaultLocation;
+        },
+        set: function(value){
+            if(!value.x || !value.y)
+                throw new Error('Invalid location');
+
+            defaultLocation = value;
+        }
+    });
+
+}
+
+const circle = new Circle(10);
+circle.defaultLocation = {x:4,y:5}
+console.log(circle.defaultLocation)
+circle.draw();
+
