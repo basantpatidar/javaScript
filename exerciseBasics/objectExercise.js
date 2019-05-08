@@ -234,7 +234,7 @@ function except(array, excluded){
     for(let i = 0; i < array.length; i++)
         for(let values of excluded)
             if (array[i] == values)
-                array.splice(i,1);
+                array.splice(i,1); // i 
     return array;
 }
 
@@ -294,7 +294,7 @@ function getMax(array){
     if (array.length === 0) return undefined;
     return array.reduce((a,b) => (a > b) ? a : b);
 }
-
+// use of filter, sort, reverse and map methods
 const movies = [
     {title: 'a', year: 2018, rating: 4.5},
     {title: 'b', year: 2018, rating: 4.7},
@@ -318,7 +318,7 @@ arrayExercise();
 function functionExercise(){
     console.log("----------------Functions-------------------");
     
-
+// use of ...REST operator
 function sum(...args){
     let total = 0;
     console.log(args)
@@ -333,9 +333,12 @@ function sum(...args){
         }
         return total;
 }
+
+
 const getSum = sum([1,2,3]);
 console.log(getSum);
-    
+ 
+//use of getter  
     let areaOfCircle = {
         radius: 2,
         get area() {
@@ -365,7 +368,7 @@ function countOccurrences(array, searchElement){
 }
 functionExercise();
 
-
+//  Example of this keyword
 function Circle(radius){
     console.log("--------------Circle Function-------------");
     
@@ -432,4 +435,5 @@ function Stopwatch(){
 }
 
 const sw = new Stopwatch();
+
 
