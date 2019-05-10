@@ -403,6 +403,8 @@ circle.defaultLocation = {x:4,y:5}
 console.log(circle.defaultLocation)
 circle.draw();
 
+
+function ObjectGetterSetter(){
 function Stopwatch(){
     let startTime, endTime, running, duration = 0;
     this.start = function(){
@@ -485,3 +487,7 @@ StopwatchProto.prototype.reset = function(){
     this.running = false;
     duration = 0;
 };
+
+}
+
+ObjectGetterSetter();
