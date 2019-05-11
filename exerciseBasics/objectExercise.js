@@ -517,6 +517,18 @@ for (key of library){
     else
         console.log("You have not read this book yet.");    
 }
+
+    function bubbleSort(){
+        let list = [6,4,0, 3,-2,1];
+        for (let i = 0; i <= list.length; i ++){
+            for(let j = 1; j <= list.length; j ++){
+                if(j>i){
+                    // list[]
+                }
+            }
+        }
+    
+    }
 }
 
 wThreeResource();
