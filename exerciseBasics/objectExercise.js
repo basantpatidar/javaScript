@@ -461,7 +461,7 @@ function StopwatchProto(){
     });
 }
 
-const sw = new StopwatchProto();
+// const sw = new StopwatchProto();
 
 
 StopwatchProto.prototype.start = function(){
@@ -490,4 +490,33 @@ StopwatchProto.prototype.reset = function(){
 
 }
 
-ObjectGetterSetter();
+// ObjectGetterSetter();
+
+
+console.log("---------------------------------------------Last-----------------------------------------");
+function wThreeResource(){
+    var library = [ 
+        {
+            author: 'Bill Gates',
+            title: 'The Road Ahead',
+            readingStatus: true
+        },
+        {
+            author: 'Steve Jobs',
+            title: 'Walter Isaacson',
+            readingStatus: true
+        },
+        {
+            author: 'Suzanne Collins',
+            title:  'Mockingjay: The Final Book of The Hunger Games', 
+            readingStatus: false
+        }];
+for (key of library){
+    if (key.readingStatus)
+        console.log("You already read this book");
+    else
+        console.log("You have not read this book yet.");    
+}
+}
+
+wThreeResource();
