@@ -569,3 +569,10 @@ function isObject(obj)
     return type === 'function' || type === 'object' && !!obj;  
   } 
 console.log(all_values({red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}));
+
+
+
+function hasKey(obj, key) {
+    return obj != null && hasOwnProperty.call(obj, key);
+  }
+console.log(hasKey({red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}, "green"));
