@@ -16,12 +16,13 @@ class Counter extends Component {
       </div>
     );
   }
+  //Creating a badge to count number of items in cart.
     getBadgeClasses() {
         let classes = "badge m-2 badge-";
         classes += this.state.count === 0 ? "warning" : "primary";
         return classes
     }
-
+// If items in cart are 0 then shows "zero" else digit
   formateCount() {
     const { count } = this.state;
     return count === 0 ? "Zero" : count;
