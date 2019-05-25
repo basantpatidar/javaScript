@@ -600,3 +600,26 @@ function hasKey(obj, key) {
     return obj != null && hasOwnProperty.call(obj, key);
   }
 console.log(hasKey({red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}, "green"));
+
+function understandingObject(){
+     
+    console.log(Date.prototype);
+
+    const basant = new Object();
+    basant.height = 160;
+    basant.weight = 250;
+    basant['city'] = 'indore';
+    console.log(basant);
+    console.log(Object.prototype);
+
+    const avtar = {
+        height: 120,
+        weight: 650,
+        city: 'patna'
+    }
+
+
+    console.log(avtar);
+
+    console.log(avtar.city);
+    console.log(basant['city']);
