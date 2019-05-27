@@ -595,7 +595,7 @@ function isObject(obj)
 console.log(invertKeyValue({red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}));
 
 
-
+//checking object key
 function hasKey(obj, key) {
     return obj != null && hasOwnProperty.call(obj, key);
   }
@@ -617,8 +617,6 @@ function understandingObject(){
         weight: 650,
         city: 'patna'
     }
-
-
     console.log(avtar);
 
     console.log(avtar.city);
