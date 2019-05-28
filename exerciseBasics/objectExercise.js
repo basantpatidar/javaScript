@@ -634,3 +634,21 @@ function rString(h1){
         textNode.data = str;
     }, 250);
 }
+
+
+function showProperties(movie){
+  for (let key in movie){
+    // console.log(movie[key]);
+    
+    if (typeof movie[key] == "string"){
+      console.log(key+" "+movie[key]);
+    }
+  }
+}
+const movie = {
+  title: 'a',
+  releaseYear: 2019,
+  rating: 4.5,
+  director: 'b'
+};
+showProperties(movie);
