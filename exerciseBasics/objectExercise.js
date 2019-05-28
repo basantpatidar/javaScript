@@ -621,3 +621,16 @@ function understandingObject(){
 
     console.log(avtar.city);
     console.log(basant['city']);
+    
+function rString(h1){
+    var element = document.getElementById(h1);
+    var textNode = element.childNodes[0];
+    var str = textNode.data;
+    setInterval(function(){
+        // let str = "Basant";
+        // str = str[str.length - 1] + str.substring(0,str.length - 1);
+        str = str.substring(1,str.length) + str[0] ;
+        // console.log(str);
+        textNode.data = str;
+    }, 250);
+}
