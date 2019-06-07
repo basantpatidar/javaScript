@@ -12,4 +12,8 @@ Contains:
   h. getter setter
   
 2. React
+  a. jsx
+  b. props
+  c. state
+  d. life cycle methods
   //working on it.
