@@ -39,5 +39,7 @@
 
 10. Dynamic Typing:- JS has dynamic typing and JS engine dont need to know the type of variable. JS figures it out on runtime and 
                         type can be changed on runtime.
+                        
+  */
 
 
