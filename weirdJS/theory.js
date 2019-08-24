@@ -39,6 +39,8 @@
 
 10. Dynamic Typing:- JS has dynamic typing and JS engine dont need to know the type of variable. JS figures it out on runtime and 
                         type can be changed on runtime.
+                        
+  */
 
 11. Data types : -
         A. Primitive: - Value type, a = 5; b = a; In this case be will have copied value of 'a' and memory address of 'b' will
