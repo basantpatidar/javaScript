@@ -196,16 +196,16 @@ function solution(ranks) {
 // console.log(solution([4, 4, 3, 3, 1, 0]));
 
 function sym(args) {
-  arguments[1].forEach(outerLoop => {
-  //   args[outerLoop].forEach(innerLoop => {
-  //     args[outerLoop + 1].forEach(nextInnerLoop => {
-  //       if (innerLoop !== nextInnerLoop) {
-  //         console.log(innerLoop, " ", nextInnerLoop);
-  //       }
-  //     });
-  //   });
-  console.log(outerLoop)
-  });
+  for (i = 0; i < arguments.length - 1; i++) {
+    arguments[i].forEach(innerLoop => {
+      arguments[i + 1].forEach(nextInnerLoop => {
+        if (innerLoop !== nextInnerLoop) {
+          console.log(innerLoop, " ", nextInnerLoop);
+        }
+      });
+      console.log(i + " Outer Loop => " + innerLoop);
+    });
+  }
   // return newArgs;
 }
 
