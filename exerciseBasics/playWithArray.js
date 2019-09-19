@@ -41,7 +41,57 @@ const one = arr => {
   brr = arr.reverse();
   console.log(arr);
   console.log(brr, "--<--<-- Returns reversed array of elements");
-};
-// one(arr);
 
-const two = () => {};
+  arr.forEach(element => {
+    console.log(element);
+  });
+};
+one(arr);
+
+const two = () => {
+  str = "abcdcba";
+  let result = str
+    .split("")
+    .reverse()
+    .join("");
+  if (result === str) {
+    console.log("Yes");
+  }
+};
+// two();
+
+const useFilter = strArr => {
+  return strArr.filter(fltr => {
+    fltr.indexOf("Hulk");
+  });
+};
+// console.log(useFilter(strArr));
+
+function isPositive(value) {
+  return value > 0;
+}
+
+var filtered = [112, 52, 0, -1, 944].filter(isPositive);
+// console.log(filtered);
+
+function greaterThan(value) {
+  return value > 10;
+}
+// var newValue = [1, 2, 3, 10, 20, 30].filter(greaterThan);
+// console.log(newValue);
+
+let list = document.querySelector("#list");
+const useMap = arr => {
+  arr.map(elements => {
+    return (list.innerHTML += "<li>" + elements + "</li>");
+  });
+};
+useMap(strArr);
+
+const useMapAgain = arr => {
+  arr.map(items => {
+    return (document.querySelector("#list").innerHTML +=
+      "<li>" + items + "</li>");
+  });
+};
+// useMapAgain(arr);
